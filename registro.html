@@ -1,34 +1,97 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Registro POLARIS</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registro POLARIS</title>
 
-<body>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
 
-<h1>Registro de Miembros POLARIS</h1>
+        <link rel="stylesheet" href="CSS/styles.css">
+    </head>
 
-<form>
+    <body>
 
-<label>Nombre completo</label><br>
-<input type="text"><br><br>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <i class="bi bi-rocket"></i> POLARIS
+                </a>
 
-<label>Correo electrónico</label><br>
-<input type="email"><br><br>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-<label>Proyecto de interés</label><br>
-<select>
-<option>PolariX</option>
-<option>Mentes en Órbita</option>
-<option>Hydronautas</option>
-</select><br><br>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">INICIO</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#proyectos">PROYECTOS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#eventos">EVENTOS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-<button type="submit">Enviar</button>
+        <section class="py-5 mt-5">
+            <div class="container">
+                <h1 class="text-center mb-4">
+                    <i class="bi bi-rocket-takeoff"></i> REGISTRO POLARIS
+                </h1>
 
-</form>
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <form class="card p-4 shadow border-0">
+                            <div class="mb-3">
+                                <label class="form-label">Nombre completo</label>
+                                <input type="text" class="form-control" placeholder="Ingresa tu nombre" required>
+                            </div>
 
-</body>
+                            <div class="mb-3">
+                                <label class="form-label">Correo electrónico</label>
+                                <input type="email" class="form-control" placeholder="correo@ejemplo.com" required>
+                            </div>
 
+                            <div class="mb-3">
+                                <label class="form-label">Proyecto de interés</label>
+                                <select class="form-select" required>
+                                    <option value="" disabled selected>Selecciona un proyecto</option>
+                                    <option>PolariX</option>
+                                    <option>Mentes en Órbita</option>
+                                    <option>Hydronautas</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">¿Por qué quieres unirte? (opcional)</label>
+                                <textarea class="form-control" rows="3" placeholder="Cuéntanos sobre tu interés en el espacio..."></textarea>
+                            </div>
+
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary px-5">Enviar Registro</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="bg-dark text-white text-center py-4">
+            <div class="container">
+                <p class="mb-2">© 2026 Programa POLARIS - Instituto Tecnológico de Matamoros.</p>
+                <div class="d-flex gap-3 justify-content-center">
+                    <a href="https://www.facebook.com/TecNM.Matamoros" class="text-white fs-3">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="#" class="text-white fs-3">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    </body>
 </html>
